@@ -38,7 +38,7 @@ The warehouse supports analytical questions such as service density by route, pe
 The warehouse follows the medallion (Bronze / Silver / Gold) architecture pattern, with each layer carrying explicit responsibilities and clear contracts between stages.
 
 <p align="center">
-  <img src="docs/images/01_data_architecture.png" alt="Data Architecture Diagram" width="100%"/>
+  <img src="docs/01_data_architecture.drawio.png" alt="Data Architecture Diagram" width="100%"/>
 </p>
 
 | Layer | Purpose | Object Type | Transformations |
@@ -171,7 +171,7 @@ After successful execution, the warehouse contains approximately 1.6 million row
 The diagram below traces each GTFS source file through the bronze and silver layers into the gold dimensional model:
 
 <p align="center">
-  <img src="docs/images/02_data_flow_lineage.png" alt="Data Flow Lineage Diagram" width="100%"/>
+  <img src="docs/02_data_flow_lineage.drawio.png" alt="Data Flow Lineage Diagram" width="100%"/>
 </p>
 
 Reference-only tables (`agency`, `levels`, `shapes`, `pathways`) and empty feeds (`calendar_dates`, `transfers`) are retained in bronze for completeness but are not promoted to silver or gold, as they do not contribute to the analytical model.
@@ -183,7 +183,7 @@ Reference-only tables (`agency`, `levels`, `shapes`, `pathways`) and empty feeds
 The gold layer implements a classic Kimball-style star schema with a central fact table and five conformed dimensions:
 
 <p align="center">
-  <img src="docs/images/03_star_schema.png" alt="Star Schema Data Model" width="100%"/>
+  <img src="docs/03_data_model_star_schema.drawio.png" alt="Star Schema Data Model" width="100%"/>
 </p>
 
 ### Dimensions
