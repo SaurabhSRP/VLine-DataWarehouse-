@@ -84,7 +84,6 @@ The GTFS Schedule format is a forward-looking timetable specification, not a his
 vline-gtfs-warehouse/
 ├── README.md
 ├── docs/
-│   └── images/
 │       ├── 01_data_architecture.png
 │       ├── 02_data_flow_lineage.png
 │       └── 03_star_schema.png
