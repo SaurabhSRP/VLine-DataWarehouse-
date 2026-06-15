@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram id="WbL0cKb1KiRaPN8l9ti1" name="Page-2">
+    <mxGraphModel dx="1857" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIZulzzQ74XMzyRt_znc-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=none;swimlaneFillColor=default;" value="gold_fact_stop_event" vertex="1">
+          <mxGeometry height="210" width="160" x="334" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-2" parent="LIZulzzQ74XMzyRt_znc-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="stop_event_key (PK)&lt;div&gt;trip_key (FK)&lt;/div&gt;&lt;div&gt;stop_key (FK)&lt;/div&gt;&lt;div&gt;route_key (FK)&lt;/div&gt;&lt;div&gt;stop_sequence&lt;/div&gt;&lt;div&gt;arrival_seconds&lt;/div&gt;&lt;div&gt;departure_seconds&lt;/div&gt;&lt;div&gt;dwell_seconds&lt;/div&gt;&lt;div&gt;arrival_hour&lt;/div&gt;&lt;div&gt;distance_meters&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="gold.dim_route" vertex="1">
+          <mxGeometry height="170" width="160" x="44" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-4" parent="LIZulzzQ74XMzyRt_znc-3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="route_key (PK)&lt;div&gt;route_id&lt;/div&gt;&lt;div&gt;route_short_name&lt;/div&gt;&lt;div&gt;route_long_name&lt;/div&gt;&lt;div&gt;origin_town&lt;/div&gt;&lt;div&gt;destination_town&lt;/div&gt;&lt;div&gt;line_color&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="gold.dim_trip" vertex="1">
+          <mxGeometry height="150" width="160" x="64" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-6" parent="LIZulzzQ74XMzyRt_znc-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="trip_key (PK)&lt;div&gt;trip_id&lt;/div&gt;&lt;div&gt;trip_headsign&lt;/div&gt;&lt;div&gt;direction_label&lt;/div&gt;&lt;div&gt;wheelchair_accessible&lt;/div&gt;&lt;div&gt;bikes_allowed&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-7" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="gold.dim_stops" vertex="1">
+          <mxGeometry height="130" width="160" x="614" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-8" parent="LIZulzzQ74XMzyRt_znc-7" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="stop_key (PK)&lt;div&gt;stop_id&lt;/div&gt;&lt;div&gt;stop_name&lt;/div&gt;&lt;div&gt;stop_lat&lt;/div&gt;&lt;div&gt;stop_lon&lt;/div&gt;&lt;div&gt;wheelchair_accessible&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="gold.dim_service_pattern" vertex="1">
+          <mxGeometry height="150" width="184" x="600" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="LIZulzzQ74XMzyRt_znc-10" parent="LIZulzzQ74XMzyRt_znc-9" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="service_pattern_key (PK)&lt;div&gt;service_id&lt;/div&gt;&lt;div&gt;pattern_label&lt;/div&gt;&lt;div&gt;days_per_week&lt;/div&gt;&lt;div&gt;start_date&lt;/div&gt;&lt;div&gt;end_date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="184" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CDy7y_t8DvFlIjK_-5Ka-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="gold.dim_date" vertex="1">
+          <mxGeometry height="200" width="160" x="324" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CDy7y_t8DvFlIjK_-5Ka-2" parent="CDy7y_t8DvFlIjK_-5Ka-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="date_key (PK)&lt;div&gt;full_date&lt;/div&gt;&lt;div&gt;year&lt;/div&gt;&lt;div&gt;Quarter&lt;/div&gt;&lt;div&gt;Month&lt;/div&gt;&lt;div&gt;month_name&lt;/div&gt;&lt;div&gt;day_name&lt;/div&gt;&lt;div&gt;day_of_week&lt;/div&gt;&lt;div&gt;is_weekend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b0HHmgbFHfii_JhaNr8T-10" edge="1" parent="CDy7y_t8DvFlIjK_-5Ka-1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.009;exitY=0.593;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LIZulzzQ74XMzyRt_znc-1" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="97.44000000000005" y="200.00000000000006" as="sourcePoint" />
+            <mxPoint x="-54" y="351.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3byVgYOp6CR9CV4QAbrp-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1" value="V/Line GTFS Data Warehouse — Star Schema (Gold Layer)" vertex="1">
+          <mxGeometry height="40" width="850" x="-40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b0HHmgbFHfii_JhaNr8T-1" edge="1" parent="1" source="LIZulzzQ74XMzyRt_znc-4" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.999;exitY=0.388;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="234" y="610" as="sourcePoint" />
+            <mxPoint x="334" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b0HHmgbFHfii_JhaNr8T-2" edge="1" parent="1" source="LIZulzzQ74XMzyRt_znc-6" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="204" y="493.5" as="sourcePoint" />
+            <mxPoint x="334" y="596.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b0HHmgbFHfii_JhaNr8T-3" edge="1" parent="1" source="LIZulzzQ74XMzyRt_znc-7" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.006;entryY=0.394;entryDx=0;entryDy=0;entryPerimeter=0;" target="LIZulzzQ74XMzyRt_znc-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="653.92" y="674.92" as="sourcePoint" />
+            <mxPoint x="539.9999999999999" y="549.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b0HHmgbFHfii_JhaNr8T-4" edge="1" parent="1" source="LIZulzzQ74XMzyRt_znc-10" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.012;exitY=0.326;exitDx=0;exitDy=0;entryX=1.021;entryY=0.179;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="LIZulzzQ74XMzyRt_znc-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="669" y="632" as="sourcePoint" />
+            <mxPoint x="550" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
